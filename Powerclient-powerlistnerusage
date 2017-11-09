@@ -1,0 +1,5 @@
+Power-listener -port 4455 -verbose
+
+Power-Client -c ipaddress -p 4455 - verbose
+
+https://cyberwardog.blogspot.com/2016/07/powershell-tcp-client-server-with-net.html
