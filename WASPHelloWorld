@@ -1,0 +1,13 @@
+Add-PSSnapin WASP
+Get-Command -PSSnapin WASP
+
+notepad.exe
+
+Start-Sleep 3
+
+Select-Window -ProcessName "notepad" | Send-Keys "this is example"
+
+Start-Sleep 3
+
+
+Select-Window -ProcessName "notepad" | Select-Control "File"
