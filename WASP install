@@ -1,0 +1,11 @@
+$rtd = [System.Runtime.InteropServices.RuntimeEnvironment]::GetRuntimeDirectory()
+set-alias installutil (resolve-path (join-path $rtd installutil.exe))
+
+  
+# cd C:\Users\Joel\Projects\PowerShell\Win32Window\bin\Release
+installutil "%location of DLL file % WASP.dll"
+
+Add-PSSnapin WASP
+
+# get-help *-Window
+Get-Command -PSSnapin WASP
